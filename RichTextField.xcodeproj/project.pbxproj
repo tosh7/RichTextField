@@ -14,9 +14,10 @@
 		1905B70D29A9CD57004682FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B70C29A9CD57004682FB /* AppDelegate.swift */; };
 		1905B70F29A9CD57004682FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B70E29A9CD57004682FB /* SceneDelegate.swift */; };
 		1905B71129A9CD57004682FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B71029A9CD57004682FB /* ViewController.swift */; };
-		1905B71429A9CD57004682FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71229A9CD57004682FB /* Main.storyboard */; };
 		1905B71629A9CD58004682FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71529A9CD58004682FB /* Assets.xcassets */; };
 		1905B71929A9CD58004682FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71729A9CD58004682FB /* LaunchScreen.storyboard */; };
+		1905B71F29A9CF01004682FB /* RichTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1905B6EC29A9CB61004682FB /* RichTextField.framework */; };
+		1905B72029A9CF01004682FB /* RichTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1905B6EC29A9CB61004682FB /* RichTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,28 @@
 			remoteGlobalIDString = 1905B6EB29A9CB61004682FB;
 			remoteInfo = RichTextField;
 		};
+		1905B72129A9CF01004682FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1905B6E329A9CB61004682FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1905B6EB29A9CB61004682FB;
+			remoteInfo = RichTextField;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1905B72329A9CF01004682FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1905B72029A9CF01004682FB /* RichTextField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1905B6EC29A9CB61004682FB /* RichTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RichTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +61,6 @@
 		1905B70C29A9CD57004682FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1905B70E29A9CD57004682FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1905B71029A9CD57004682FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1905B71329A9CD57004682FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1905B71529A9CD58004682FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1905B71829A9CD58004682FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1905B71A29A9CD58004682FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1905B71F29A9CF01004682FB /* RichTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +100,7 @@
 				1905B6FA29A9CB61004682FB /* RichTextFieldTests */,
 				1905B70B29A9CD57004682FB /* RichTextField-Sample */,
 				1905B6ED29A9CB61004682FB /* Products */,
+				1905B71E29A9CF01004682FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,12 +137,18 @@
 				1905B70C29A9CD57004682FB /* AppDelegate.swift */,
 				1905B70E29A9CD57004682FB /* SceneDelegate.swift */,
 				1905B71029A9CD57004682FB /* ViewController.swift */,
-				1905B71229A9CD57004682FB /* Main.storyboard */,
 				1905B71529A9CD58004682FB /* Assets.xcassets */,
 				1905B71729A9CD58004682FB /* LaunchScreen.storyboard */,
 				1905B71A29A9CD58004682FB /* Info.plist */,
 			);
 			path = "RichTextField-Sample";
+			sourceTree = "<group>";
+		};
+		1905B71E29A9CF01004682FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +208,12 @@
 				1905B70629A9CD57004682FB /* Sources */,
 				1905B70729A9CD57004682FB /* Frameworks */,
 				1905B70829A9CD57004682FB /* Resources */,
+				1905B72329A9CF01004682FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1905B72229A9CF01004682FB /* PBXTargetDependency */,
 			);
 			name = "RichTextField-Sample";
 			productName = "RichTextField-Sample";
@@ -251,7 +282,6 @@
 			files = (
 				1905B71929A9CD58004682FB /* LaunchScreen.storyboard in Resources */,
 				1905B71629A9CD58004682FB /* Assets.xcassets in Resources */,
-				1905B71429A9CD57004682FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,17 +322,14 @@
 			target = 1905B6EB29A9CB61004682FB /* RichTextField */;
 			targetProxy = 1905B6F829A9CB61004682FB /* PBXContainerItemProxy */;
 		};
+		1905B72229A9CF01004682FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1905B6EB29A9CB61004682FB /* RichTextField */;
+			targetProxy = 1905B72129A9CF01004682FB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1905B71229A9CD57004682FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1905B71329A9CD57004682FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1905B71729A9CD58004682FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -538,7 +565,6 @@
 				INFOPLIST_FILE = "RichTextField-Sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -566,7 +592,6 @@
 				INFOPLIST_FILE = "RichTextField-Sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
