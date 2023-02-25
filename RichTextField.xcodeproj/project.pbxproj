@@ -18,6 +18,8 @@
 		1905B71929A9CD58004682FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71729A9CD58004682FB /* LaunchScreen.storyboard */; };
 		1905B71F29A9CF01004682FB /* RichTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1905B6EC29A9CB61004682FB /* RichTextField.framework */; };
 		1905B72029A9CF01004682FB /* RichTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1905B6EC29A9CB61004682FB /* RichTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1905B72629A9CF81004682FB /* PasswordCheckerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */; };
+		1905B72929A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B72829A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		1905B71529A9CD58004682FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1905B71829A9CD58004682FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1905B71A29A9CD58004682FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCheckerTextField.swift; sourceTree = "<group>"; };
+		1905B72829A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCheckerTextFieldPreviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			children = (
 				1905B6EF29A9CB61004682FB /* RichTextField.h */,
 				1905B6F029A9CB61004682FB /* RichTextField.docc */,
+				1905B72429A9CF42004682FB /* TextFields */,
 			);
 			path = RichTextField;
 			sourceTree = "<group>";
@@ -149,6 +154,23 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1905B72429A9CF42004682FB /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				1905B72729A9D136004682FB /* Previews */,
+				1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		1905B72729A9D136004682FB /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				1905B72829A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift */,
+			);
+			path = Previews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1905B72929A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift in Sources */,
+				1905B72629A9CF81004682FB /* PasswordCheckerTextField.swift in Sources */,
 				1905B6F129A9CB61004682FB /* RichTextField.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +546,7 @@
 		1905B70429A9CB61004682FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56787CM63P;
@@ -539,6 +564,7 @@
 		1905B70529A9CB61004682FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56787CM63P;
@@ -556,6 +582,7 @@
 		1905B71C29A9CD58004682FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +610,7 @@
 		1905B71D29A9CD58004682FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
