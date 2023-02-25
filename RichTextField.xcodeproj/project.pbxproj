@@ -20,6 +20,7 @@
 		1905B72029A9CF01004682FB /* RichTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1905B6EC29A9CB61004682FB /* RichTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1905B72629A9CF81004682FB /* PasswordCheckerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */; };
 		1905B72929A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B72829A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift */; };
+		1905B72B29A9F597004682FB /* PasswordCheckerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B72A29A9F597004682FB /* PasswordCheckerTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		1905B71A29A9CD58004682FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCheckerTextField.swift; sourceTree = "<group>"; };
 		1905B72829A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCheckerTextFieldPreviews.swift; sourceTree = "<group>"; };
+		1905B72A29A9F597004682FB /* PasswordCheckerTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCheckerTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,18 +161,19 @@
 		1905B72429A9CF42004682FB /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
-				1905B72729A9D136004682FB /* Previews */,
-				1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */,
+				1905B72729A9D136004682FB /* PasswordCheckerTextField */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
 		};
-		1905B72729A9D136004682FB /* Previews */ = {
+		1905B72729A9D136004682FB /* PasswordCheckerTextField */ = {
 			isa = PBXGroup;
 			children = (
+				1905B72529A9CF81004682FB /* PasswordCheckerTextField.swift */,
+				1905B72A29A9F597004682FB /* PasswordCheckerTextFieldDelegate.swift */,
 				1905B72829A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift */,
 			);
-			path = Previews;
+			path = PasswordCheckerTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1905B72929A9D168004682FB /* PasswordCheckerTextFieldPreviews.swift in Sources */,
+				1905B72B29A9F597004682FB /* PasswordCheckerTextFieldDelegate.swift in Sources */,
 				1905B72629A9CF81004682FB /* PasswordCheckerTextField.swift in Sources */,
 				1905B6F129A9CB61004682FB /* RichTextField.docc in Sources */,
 			);

@@ -13,6 +13,7 @@ public class PasswordCheckerTextField: UIView {
     /// In this class, total height will be lineHight in empty state
     /// double lineHeight for other cases
     public var lineHeight: CGFloat = 30
+    public weak var delegate: PasswordCheckerTextFieldDelegate?
     /// background color for whole area
     public override var backgroundColor: UIColor? {
         didSet {
@@ -56,7 +57,7 @@ public class PasswordCheckerTextField: UIView {
     private lazy var textField: UITextField = {
         let view = UITextField()
         view.isSecureTextEntry = true
-        view.delegate = self
+        view.delegate = self.delegate
         view.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         return view
     }()

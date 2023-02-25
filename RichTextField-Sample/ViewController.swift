@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .red
+        textView.delegate = self
 
         view.addSubview(textView)
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -24,5 +25,8 @@ class ViewController: UIViewController {
         textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
     }
+}
+
+extension ViewController: PasswordCheckerTextFieldDelegate {
 }
 
