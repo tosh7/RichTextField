@@ -11,6 +11,12 @@
 		1905B6F729A9CB61004682FB /* RichTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1905B6EC29A9CB61004682FB /* RichTextField.framework */; };
 		1905B6FC29A9CB61004682FB /* RichTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B6FB29A9CB61004682FB /* RichTextFieldTests.swift */; };
 		1905B6FD29A9CB61004682FB /* RichTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1905B6EF29A9CB61004682FB /* RichTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1905B70D29A9CD57004682FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B70C29A9CD57004682FB /* AppDelegate.swift */; };
+		1905B70F29A9CD57004682FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B70E29A9CD57004682FB /* SceneDelegate.swift */; };
+		1905B71129A9CD57004682FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905B71029A9CD57004682FB /* ViewController.swift */; };
+		1905B71429A9CD57004682FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71229A9CD57004682FB /* Main.storyboard */; };
+		1905B71629A9CD58004682FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71529A9CD58004682FB /* Assets.xcassets */; };
+		1905B71929A9CD58004682FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1905B71729A9CD58004682FB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		1905B6F029A9CB61004682FB /* RichTextField.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RichTextField.docc; sourceTree = "<group>"; };
 		1905B6F629A9CB61004682FB /* RichTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1905B6FB29A9CB61004682FB /* RichTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextFieldTests.swift; sourceTree = "<group>"; };
+		1905B70A29A9CD57004682FB /* RichTextField-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RichTextField-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1905B70C29A9CD57004682FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1905B70E29A9CD57004682FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1905B71029A9CD57004682FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1905B71329A9CD57004682FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1905B71529A9CD58004682FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1905B71829A9CD58004682FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1905B71A29A9CD58004682FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1905B70729A9CD57004682FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +76,7 @@
 			children = (
 				1905B6EE29A9CB61004682FB /* RichTextField */,
 				1905B6FA29A9CB61004682FB /* RichTextFieldTests */,
+				1905B70B29A9CD57004682FB /* RichTextField-Sample */,
 				1905B6ED29A9CB61004682FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +86,7 @@
 			children = (
 				1905B6EC29A9CB61004682FB /* RichTextField.framework */,
 				1905B6F629A9CB61004682FB /* RichTextFieldTests.xctest */,
+				1905B70A29A9CD57004682FB /* RichTextField-Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +106,20 @@
 				1905B6FB29A9CB61004682FB /* RichTextFieldTests.swift */,
 			);
 			path = RichTextFieldTests;
+			sourceTree = "<group>";
+		};
+		1905B70B29A9CD57004682FB /* RichTextField-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				1905B70C29A9CD57004682FB /* AppDelegate.swift */,
+				1905B70E29A9CD57004682FB /* SceneDelegate.swift */,
+				1905B71029A9CD57004682FB /* ViewController.swift */,
+				1905B71229A9CD57004682FB /* Main.storyboard */,
+				1905B71529A9CD58004682FB /* Assets.xcassets */,
+				1905B71729A9CD58004682FB /* LaunchScreen.storyboard */,
+				1905B71A29A9CD58004682FB /* Info.plist */,
+			);
+			path = "RichTextField-Sample";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +172,23 @@
 			productReference = 1905B6F629A9CB61004682FB /* RichTextFieldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1905B70929A9CD57004682FB /* RichTextField-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1905B71B29A9CD58004682FB /* Build configuration list for PBXNativeTarget "RichTextField-Sample" */;
+			buildPhases = (
+				1905B70629A9CD57004682FB /* Sources */,
+				1905B70729A9CD57004682FB /* Frameworks */,
+				1905B70829A9CD57004682FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RichTextField-Sample";
+			productName = "RichTextField-Sample";
+			productReference = 1905B70A29A9CD57004682FB /* RichTextField-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +203,9 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					1905B6F529A9CB61004682FB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1905B70929A9CD57004682FB = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -168,6 +225,7 @@
 			targets = (
 				1905B6EB29A9CB61004682FB /* RichTextField */,
 				1905B6F529A9CB61004682FB /* RichTextFieldTests */,
+				1905B70929A9CD57004682FB /* RichTextField-Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +242,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1905B70829A9CD57004682FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1905B71929A9CD58004682FB /* LaunchScreen.storyboard in Resources */,
+				1905B71629A9CD58004682FB /* Assets.xcassets in Resources */,
+				1905B71429A9CD57004682FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +274,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1905B70629A9CD57004682FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1905B71129A9CD57004682FB /* ViewController.swift in Sources */,
+				1905B70D29A9CD57004682FB /* AppDelegate.swift in Sources */,
+				1905B70F29A9CD57004682FB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -215,6 +293,25 @@
 			targetProxy = 1905B6F829A9CB61004682FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1905B71229A9CD57004682FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1905B71329A9CD57004682FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1905B71729A9CD58004682FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1905B71829A9CD58004682FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1905B6FE29A9CB61004682FB /* Debug */ = {
@@ -350,6 +447,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +476,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +499,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56787CM63P;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.RichTextFieldTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,10 +516,67 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56787CM63P;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.RichTextFieldTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1905B71C29A9CD58004682FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RichTextField-Sample/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tosh7.RichTextField-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1905B71D29A9CD58004682FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RichTextField-Sample/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tosh7.RichTextField-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +608,15 @@
 			buildConfigurations = (
 				1905B70429A9CB61004682FB /* Debug */,
 				1905B70529A9CB61004682FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1905B71B29A9CD58004682FB /* Build configuration list for PBXNativeTarget "RichTextField-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1905B71C29A9CD58004682FB /* Debug */,
+				1905B71D29A9CD58004682FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
