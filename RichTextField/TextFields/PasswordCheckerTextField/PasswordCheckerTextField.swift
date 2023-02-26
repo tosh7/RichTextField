@@ -37,13 +37,6 @@ public class PasswordCheckerTextField: UIView {
             checkerLabel.backgroundColor = checkerLabelBackgroundColor
         }
     }
-    public var corderRadius: CGFloat = 0.0 {
-        didSet {
-            textField.layer.cornerRadius = corderRadius
-            checkerLabel.layer.cornerRadius = corderRadius
-            layer.cornerRadius = corderRadius
-        }
-    }
 
     public init() {
         super.init(frame: .zero)
@@ -66,7 +59,6 @@ public class PasswordCheckerTextField: UIView {
         view.isSecureTextEntry = true
         view.delegate = self.delegate
         view.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-        view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         view.clipsToBounds = true
         return view
     }()
@@ -76,7 +68,6 @@ public class PasswordCheckerTextField: UIView {
     public let checkerLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         return label
     }()
 
@@ -90,13 +81,13 @@ public class PasswordCheckerTextField: UIView {
         textField.translatesAutoresizingMaskIntoConstraints = false
         checkerLabel.translatesAutoresizingMaskIntoConstraints = false
 
-        textField.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        textField.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        textField.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        textField.topAnchor.constraint(equalTo: topAnchor, constant: 4).isActive = true
+        textField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
+        textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
         textField.heightAnchor.constraint(equalToConstant: lineHeight).isActive = true
         checkerLabel.topAnchor.constraint(equalTo: textField.bottomAnchor).isActive = true
-        checkerLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        checkerLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        checkerLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
+        checkerLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
         checkerLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         checkerLabel.heightAnchor.constraint(equalToConstant: lineHeight).isActive = true
     }

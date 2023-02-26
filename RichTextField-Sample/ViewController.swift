@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
 
-        textView.corderRadius = 10
+        textView.layer.cornerRadius = 10
     }
 }
 
