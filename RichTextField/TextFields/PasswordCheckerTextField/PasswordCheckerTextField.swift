@@ -37,6 +37,13 @@ public class PasswordCheckerTextField: UIView {
             checkerLabel.backgroundColor = checkerLabelBackgroundColor
         }
     }
+    public var corderRadius: CGFloat = 0.0 {
+        didSet {
+            textField.layer.cornerRadius = corderRadius
+            checkerLabel.layer.cornerRadius = corderRadius
+            layer.cornerRadius = corderRadius
+        }
+    }
 
     public init() {
         super.init(frame: .zero)
@@ -59,6 +66,8 @@ public class PasswordCheckerTextField: UIView {
         view.isSecureTextEntry = true
         view.delegate = self.delegate
         view.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        view.clipsToBounds = true
         return view
     }()
 
@@ -67,10 +76,14 @@ public class PasswordCheckerTextField: UIView {
     public let checkerLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
+        label.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         return label
     }()
 
     private func setupViews() {
+        clipsToBounds = true
+        backgroundColor = .white
+
         addSubview(textField)
         addSubview(checkerLabel)
 
@@ -86,8 +99,6 @@ public class PasswordCheckerTextField: UIView {
         checkerLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         checkerLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         checkerLabel.heightAnchor.constraint(equalToConstant: lineHeight).isActive = true
-
-        backgroundColor = .white
     }
 
     @objc private func textFieldDidChange(_ sender: UITextField) {
