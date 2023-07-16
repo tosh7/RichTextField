@@ -8,9 +8,8 @@ Variety of rich text fields
 ## Installation
 ### Support 
 
-- [ ] Carthage
-- [x] CocoaPods
-- [ ] SwiftPM
+- CocoaPods
+- SwiftPM
 
 ## Useage
 
